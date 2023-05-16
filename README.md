@@ -9,7 +9,7 @@ Transform my voice into Jay Chou's voice with CycleGan-v2
 
 ## Dataset
 1. `data/jz/*.wav`: 115 my sound file
-2. `data/jay*.wav`: 149 Jay Chou's sound file
+2. `data/jay/*.wav`: 149 Jay Chou's sound file
 
 ## Usage
 1. Preprocess audio:

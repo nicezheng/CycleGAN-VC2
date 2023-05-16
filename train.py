@@ -10,7 +10,7 @@ from tqdm import tqdm
 
 import preprocess
 from model_tf import Generator, Discriminator
-from trainingDataset import trainingDataset
+from dataset import trainingDataset
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
@@ -28,7 +28,7 @@ class CycleGANTraining(object):
                  output_B_dir,
                  restart_training_at=None):
         self.start_epoch = 0
-        self.num_epochs = 5001  # 5000
+        self.num_epochs = 5000  # 5000
         self.mini_batch_size = 8  # 1
         self.save_epoch_freq = 1000
         self.dataset_A = self.loadPickleFile(coded_sps_A_norm)
